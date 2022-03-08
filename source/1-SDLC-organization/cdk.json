@@ -1,6 +1,9 @@
 {
   "app": "npx ts-node bin/sdlc-organization.ts",
   "context": {
+    "@aws-cdk/core:enableStackNameDuplicates": "true",
+    "@aws-cdk:enableDiffNoFail": "true",
+    "@aws-cdk/core:stackRelativeExports": "true",
     "@aws-cdk/core:newStyleStackSynthesis": true,
     "github_alias": "Lecrisha",
     "github_repo_name": "aws-bootstrap-kit-examples",
@@ -8,7 +11,7 @@
     "email": "lecrisha@joy-assist.tech",
     "force_email_verification": true,
     "pipeline_deployable_regions": [
-      "us-east-1",
+      "us-east-1"
     ]
   }
 }
